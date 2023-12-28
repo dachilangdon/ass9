@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JustWatch.Com</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="script.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   </head>
+   <body>
+      <container class="bg-image">
+         <section>
+            <nav class="navbar navbar-expand-lg gap-32">
+               <div class="container-fluid gap-32">
+                  <a class="navbar-brand col-4" href="#"><img src="https://www.justwatch.com/appassets/img/logo/JustWatch-logo-large.webp" width="50%"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse gap-32" id="navbarSupportedContent">
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-32">
+                        <li class="nav-item gap-32">
+                           <a class="nav-link gap-32" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link gap-32" href="#newsection"> New</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link gap-32" href="#imdbTable">Popular</a>
+                           </a>
+                        <li class="nav-item">
+                           <a class="nav-link gap-32" href="#movieLists">Lists</a>
+                        <li class="nav-link gap-32"></li>
+                        <input type="search" class="form-control rounded" placeholder="Search for Movies and TV Series" aria-label="Search " aria-describedby="">
+                        <button type="button" class="btn btn-outline-primary" data-mdb-ripple-init> Search </button>
+                     </ul>
+                     </li>
+                     </li>
+                     </ul>
+                     <form class="disruby gap-2" role="Sign in">
+                        <button class="btn btn-secondary" type="submit">Sign in</button>
+                        <button class="btn btn-primary" type="submit">Sign up</button>
+                     </form>
+                  </div>
+               </div>
+            </nav>
+         </section>
+         <div class="photo-grid" id="photoGrid">
+         </div>
+         <div class="nextPageBar">
+            <button onclick="loadNextPage()"> Next Page </button>
+            <button onclick="topFunction()" id="myBtn" title="Go to top" class="nextPageBar">Go Back to Top</button> 
+         </div>
+         <div id="newsection">
+            <p class="home"> Your streaming guide for movies, TV shows & sports <a href="https://www.justwatch.com/">JustWatch</a>.</p>
+            <p class="subheading" >
+               Find where to stream new, popular & upcoming entertainment with JustWatch. 
+            </p>
+            <a class="button" href="https://www.justwatch.com/in/new">
+            <button class="discover-button" >Discover Movies & TV Shows</button>
+            </a>
+         </div>
+         <div class="movie-lists" id="movieLists">
+         </div>
+         <h1 class="tabletext">The Most Popular 10 IMDb Movies of All Time</h1>
+         <div class="container">
+            <table id="imdbTable">
+               <thead>
+                  <tr>
+                     <th>Rank</th>
+                     <th>Title</th>
+                     <th>Year</th>
+                     <th>Rating</th>
+                  </tr>
+               </thead>
+               <tbody>
+               </tbody>
+            </table>
+         </div>
+      </container>
+      <footer class="footer">
+         <div class="copyrights">
+            <p>&copy; 2023 JustWatch. All rights reserved.</p>
+         </div>
+         <div class="contact">
+            <p>Contact Us: support@justwatch.com</p>
+         </div>
+         <div class="navigation">
+            <button onclick="topFunction()" id="myBtn" title="Go Back" class="nextPageBar">Go Back </button>
+         </div>
+         <div class="subscribe">
+            <h3>Subscribe</h3>
+            <input type="email" placeholder="Your email address">
+            <button onclick="subscribe()">Subscribe</button>
+         </div>
+      </footer>
+   </body>
+</html>
